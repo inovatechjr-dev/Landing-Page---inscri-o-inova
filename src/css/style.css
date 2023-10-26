@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 25em;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.padding {
+    padding: 0 10.4rem;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #003F88;
+}
+
+section {
+    position: relative;
+}
+
+/* =======header======= */
+.logo img {
+    width: 12rem;
+    height: 7rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header {
+    position: fixed;
+    background: #FFF;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 999;
+
+    padding: 24px 104px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.nav,
+.nav-links {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+
+    gap: 3.2rem;
+
+}
+
+.nav-links .as {
+    color: #000;
+    font-size: 1.6rem;
+    border-bottom: #003F88 solid 0.2rem;
+    text-decoration: none;
+    padding: 1rem;
+
+    :visited {
+        text-decoration: none;
+    }
+}
+
+.menu .as {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 18rem;
+
+}
+
+.menu .as svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+}
+
+/* ============listDrop============= */
+.menu {
+    color: #000;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu:hover,
+.menu:focus {
+    background-color: #fff;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listDrop {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 17rem;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 7.5rem;
+    z-index: 1;
+}
+
+.listDrop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+}
+
+.listDrop a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.flipSvg svg {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in;
+}
+
+.flippSvg svg {
+    transform: rotate(0deg);
+    transition: all 0.3 ease-out;
+}
+
+/* ============listDrop============= */
+.btnInscricao {
+    display: flex;
+    width: 40.0rem;
+    height: 4.8rem;
+    min-width: 19.0rem;
+    max-width: 26.0rem;
+    padding: 1.2rem 1.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+
+    border-radius: 8px;
+    background: #003F88;
+}
+
+.btnInscricao a {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+
+    :visited {
+        text-decoration: none;
+    }
+}
+
+.btn1 {
+    margin-left: 100px;
+}
+
+@media (max-width: 1366px) {
+    .btnInscricao {
+        width: 15rem;
+    }
+
+    .btn1 {
+        margin-left: 50px;
+    }
+}
+
+/* =======header======= */
+
+/* =======Apresentação======= */
+.apresentacao {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+    gap: 5rem;
+}
+
+.textosApresentacao h1 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6rem;
+    width: 67rem;
+}
+
+.textosApresentacao h2 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #000;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem;
+    width: 68rem;
+}
+
+.textosApresentacao p {
+    margin-top: 2rem;
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    width: 61rem;
+}
+
+.btnsApresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+}
+
+.btn2 {
+    margin-top: 50px;
+}
+
+.btnsApresentacao span a {
+    color: #003F88;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+/* =======Apresentação======= */
+
+/* ======Oferece====== */
+.ofereceInova {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    height: 1376px;
+    width: 100%;
+    background: url(/src/assets/BackGround\ -\ AzulEscuro7.png);
+    background-size: cover;
+    background-repeat: round;
+
+}
+
+.ofereceCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ofereceInova h2 {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ofereceInova p {
+    margin-top: 4rem;
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    width: 86rem;
+    align-items: start;
+    text-align: justify-content;
+}
+
+.line1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1366px) {
+    .ofereceInova p {
+        width: 69rem;
+    }
+}
+
+/* ======Oferece====== */
+
+/* ======Áreas de atuação====== */
+
+.areasAtuacao {
+    margin-top: 17.6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.areasAtuacao>h1 {
+    color: #000;
+    font-size: 5.6rem;
+    margin-bottom: 4.8rem;
+}
+
+.areasAtuacao p {
+    margin-top: 5rem;
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.6rem;
+    width: 85rem;
+}
+
+@media (max-width: 1366px) {
+
+    .areasAtuacao h1 {
+        width: 55rem;
+        text-align: center;
+    }
+
+    .areasAtuacao p {
+        width: 69rem;
+    }
+}
+
+/* ======Áreas de atuação====== */
+
+/* ======Desenvolvimento====== */
+
+.desenvolvimento>h1 {
+    font-size: 4.8rem;
+    margin-top: 33.6rem;
+    margin-bottom: 1rem;
+}
+
+.blocoEquipe {
+    margin-top: 17.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipeTexto>h3 {
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+}
+
+.equipeTexto>p {
+    max-width: 840px;
+    font-size: 2.4rem;
+    margin-top: 3rem;
+}
+
+.blocoEquipe>img {
+    width: 65rem;
+    height: auto;
+}
+
+.blocoMargem {
+    margin-right: 8rem;
+}
+
+@media screen and (max-width: 1756px) {
+    .equipeTexto>p {
+        font-size: 2.1rem;
+    }
+
+    .blocoEquipe>img {
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width: 1524px) {
+    .equipeTexto>p {
+        font-size: 2rem;
+    }
+
+    .blocoEquipe>img {
+        width: 56rem;
+    }
+}
+
+/* ======Desenvolvimento====== */
+
+/* ======NovidadesInova======*/
+
+.novidadesInova {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 1376px;
+    width: 100%;
+    background: url('../assets/segundoAzul.png');
+    background-size: cover;
+    background-repeat: round;
+}
+
+.novidadesInova>h1 {
+    color: #FFF;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+/* ======NovidadesInova======*/
+
+/* ======Mobile======*/
+
+.mobile {
+    margin-top: 33rem;
+}
+
+.mobile>h1 {
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 400;
+    margin-bottom: 26.6rem;
+}
+
+/* ======Mobile======*/
+
+/* ======GestaoNegocios======*/
+
+.gestaoNegocios {
+    margin-top: 15.5rem;
+    margin-bottom: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 1376px;
+    width: 100%;
+    background: url('../assets/terceiroAzul.png');
+    background-size: cover;
+    background-repeat: round;
+}
+
+.gestaoNegocios>h1 {
+    color: #FFF;
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    width: 60rem;
+}
+
+.gestaoBloco {
+    margin-top: 30rem;
+}
+
+/* ======GestaoNegocios======*/
+
+/* =======Final========= */
+
+.line {
+    padding: 36.6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line svg {
+    width: 70vw;
+}
+
+.seletivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sel-aberto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+}
+
+.sel-aberto h2 {
+    text-align: center;
+    width: 117rem;
+    font-size: 5.6rem;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sel-aberto p {
+    width: 100rem;
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.centerCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    padding-top: 24.0rem;
+    width: 67%;
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    place-items: center;
+    gap: 2.4rem;
+
+}
+
+.card {
+    margin-top: 104px;
+    display: flex;
+    width: 27vw;
+    height: auto;
+    padding: 2vw 3vw;
+    align-items: flex-start;
+    gap: 3.2rem;
+
+    border-radius: 16px;
+    border: 4px solid #003F88;
+    background: #FFF;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ju {
+    margin-bottom: 60px;
+}
+
+.imgCard {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.card h2 {
+    width: 19rem;
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.6rem;
+}
+
+.card p {
+    width: 20rem;
+    display: flex;
+    font-size: 2rem;
+    height: 4.6rem;
+    padding: 1.2rem 0.8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.6rem;
+    align-self: stretch;
+}
+
+.inforCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.itemCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.crescer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8.4rem;
+}
+
+.crescer h2 {
+    width: 95rem;
+    color: #000;
+    text-align: center;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btnIns {
+    display: flex;
+    width: 100rem;
+    height: 6.4rem;
+    padding: 1.2rem 1.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.ou {
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linee {
+    background: #000;
+    width: 5rem;
+    height: 0.01rem;
+}
+
+.ou h3 {
+    font-size: 2rem;
+}
+
+.crescer span a {
+    color: #003F88;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+
+    :visited {
+        text-decoration: none;
+    }
+}
+
+/* =======Final========= */
+
+/* =======Footer========= */
+.footer {
+    margin-top: 37rem;
+    background: #003F88;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+}
+
+.footerTop {
+    padding-top: 8.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+.loGo img {
+    width: 17rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.linksFooter a {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.6rem;
+    text-decoration: none;
+
+    :visited {
+        text-decoration: none;
+    }
+}
+
+.lock {
+    width: 35rem;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.redesSociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7.2rem;
+}
+
+.redesSociais img {
+    width: 72px;
+    height: 72px;
+}
+
+.footerBottom {
+    padding-bottom: 6.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBottom p {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+/* =======Footer========= */
